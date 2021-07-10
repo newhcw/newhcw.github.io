@@ -1,0 +1,29 @@
+language: node_js
+node_js: 
+  - "10"
+before_script:
+  - npm i -g github-markdown
+script: 
+  - rm -rf .git
+  - bash ./bootstrap.sh
+  - git init
+  - git config user.name "newhcw"
+  - git config user.email "951123033@qq.com"
+  - git add .
+  - git commit -m "update note"
+  - git push --force --quiet "https://${TOKEN}@${GH_REF}" master:master
+ 
+env:
+  global:
+     - GH_REF: github.com/newhcw/newhcw.github.io.git
+notifications:
+  webhooks: https://oapi.dingtalk.com/robot/send?access_token=3ea2cb84a09ef03881b3842a600fe9f9aadabf9b439fc5490533de52569860db
+   # 邮件发送部署结果通知
+  email:
+    recipients:
+      - 951123033@qq.com
+    on_success: change
+    on_failure: always
+
+
+

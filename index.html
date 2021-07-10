@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html> 
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>个人笔记</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css"/>
+    <style>
+	   body {
+			background-color: #163346;
+			color: #cad3d6
+	   }
+	   html{color: #cad3d6}
+	   a{color: #0df}
+	   h1{color: #f37}
+	   .jumbotron{background-color:#163346}
+        section {
+            display: none;
+            padding: 20px 0 0;
+            border-top: 1px solid #abc;
+        }
+
+        input {
+            display: none;
+        }
+    
+        label {
+            display: inline-block;
+            margin: 0 0 -1px;
+            padding: 15px 25px;
+            font-weight: 600;
+            text-align: center;
+            color: #abc;
+            border: 1px solid transparent;
+        }
+    
+        label:before {
+            font-family: fontawesome;
+            font-weight: normal;
+            margin-right: 10px;
+        }
+
+
+
+        label:hover {
+            color: #789;
+            cursor: pointer;
+        }
+    
+        input:checked + label {
+            color: #0af;
+            border: 1px solid #abc;
+            border-top: 2px solid #0af;
+            border-bottom: 1px solid #fff;
+        }
+    
+        #tab1:checked ~ #content1,
+        #tab2:checked ~ #content2,
+        #tab3:checked ~ #content3,
+        #tab4:checked ~ #content4,
+        #tab5:checked ~ #content5,
+        #tab6:checked ~ #content6,
+        #tab7:checked ~ #content7,
+        #tab8:checked ~ #content8, 
+        #tab9:checked ~ #content9,
+        #tab10:checked ~ #content10,
+        #tab11:checked ~ #content11,
+        #tab12:checked ~ #content12,
+        #tab13:checked ~ #content13,
+        #tab14:checked ~ #content14,
+        #tab15:checked ~ #content15,
+        #tab16:checked ~ #content16,
+        #tab17:checked ~ #content17,
+        #tab18:checked ~ #content18, 
+        #tab19:checked ~ #content19,
+        #tab20:checked ~ #content20,
+        #tab21:checked ~ #content21,
+        #tab22:checked ~ #content22  {
+            display: block;
+        }
+    
+	h3 b{color: #fd5}
+    </style>
+</head>
+<body>
+
+<div class="jumbotron">
+    <div class="container">
+        <h1>Hcw's Wiki</h1>
+        <h4>注:仅供个人查阅使用,无视美感,<a href ="https://github.com/newhcw/mynote">github仓库</a></h4>
+    </div>
+</div>
+<div id="content" class="container">
+
+        <input id="tab3" type="radio" name="tabs" checked>
+        <label for="tab3">2020</label>
+    
+    
+        <input id="tab4" type="radio" name="tabs" checked>
+        <label for="tab4">2021</label>
+    
+    
+    <section id="content3">
+        <h3>目录</h3>
+           <h3><b>20.06</b></h3><hr/>
+            <p><a href='./20.06/github集成travis步骤.html'>github集成travis步骤.html</a></p>
+            
+            <p><a href='./20.06/对象的内存布局.html'>对象的内存布局.html</a></p>
+            
+            <p><a href='./20.06/设计模式目录.html'>设计模式目录.html</a></p>
+            
+            <p><a href='./20.06/设计模式-策略模式与工厂模式结合.html'>设计模式-策略模式与工厂模式结合.html</a></p>
+            
+            <p><a href='./20.06/访问者模式.html'>访问者模式.html</a></p>
+            
+            <p><a href='./20.06/逃逸分析.html'>逃逸分析.html</a></p>
+               <h3><b>20.07</b></h3><hr/>
+            <p><a href='./20.07/解决habase应用查询慢hbase-shell查询快.html'>解决habase应用查询慢hbase-shell查询快.html</a></p>
+               <h3><b>20.08</b></h3><hr/>
+            <p><a href='./20.08/JVM堆内存优化技术指针压缩.html'>JVM堆内存优化技术指针压缩.html</a></p>
+               <h3><b>20.09</b></h3><hr/>
+            <p><a href='./20.09/jdk8时间操作类.html'>jdk8时间操作类.html</a></p>
+            
+            <p><a href='./20.09/Synchroinized锁升级.html'>Synchroinized锁升级.html</a></p>
+            
+            <p><a href='./20.09/布隆过滤器的应用.html'>布隆过滤器的应用.html</a></p>
+               <h3><b>20.10</b></h3><hr/>
+            <p><a href='./20.10/Redis笔记.html'>Redis笔记.html</a></p>
+            
+            <p><a href='./20.10/SpringBoot笔记.html'>SpringBoot笔记.html</a></p>
+            
+            <p><a href='./20.10/垃圾收集器入门.html'>垃圾收集器入门.html</a></p>
+            
+            <p><a href='./20.10/如何坚持减肥.html'>如何坚持减肥.html</a></p>
+               <h3><b>20.11</b></h3><hr/>
+            <p><a href='./20.11/30岁仍然一事无成，我是这样改变自己的.html'>30岁仍然一事无成，我是这样改变自己的.html</a></p>
+            
+            <p><a href='./20.11/Java进程被kill排查过程.html'>Java进程被kill排查过程.html</a></p>
+            
+            <p><a href='./20.11/如何在生活中保持快乐.html'>如何在生活中保持快乐.html</a></p>
+            
+            <p><a href='./20.11/如何提高独立思考能力.html'>如何提高独立思考能力.html</a></p>
+            
+            <p><a href='./20.11/定了目标，却执行不了.html'>定了目标，却执行不了.html</a></p>
+            
+            <p><a href='./20.11/我成为自由职业人的样子.html'>我成为自由职业人的样子.html</a></p>
+            
+            <p><a href='./20.11/注册中心技术方案选型.html'>注册中心技术方案选型.html</a></p>
+            
+    </section>
+    
+    <section id="content4">
+        <h3>目录</h3>
+           <h3><b>21.04</b></h3><hr/>
+            <p><a href='./21.04/redis-all.html'>redis-all.html</a></p>
+               <h3><b>21.07</b></h3><hr/>
+            <p><a href='./21.07/本地环境记录.html'>本地环境记录.html</a></p>
+            
+    </section>
+    
+</div>
+</body>
+</html>
